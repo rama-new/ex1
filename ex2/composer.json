@@ -1,0 +1,12 @@
+{
+    "name": "ciandt/rschiavo",
+    "authors": [
+        {
+            "name": "Rama Alvim Sales Schiavo",
+            "email": "rschiavo@ciandt.com"
+        }
+    ],
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5"
+    }
+}
