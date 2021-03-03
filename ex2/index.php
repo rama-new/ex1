@@ -66,14 +66,7 @@
     <div class="jumbotron">
         <div class="container">
             <h1> Muitos Pets</h1>
-<?php
-    if(isset($_REQUEST['submit_btn']))
-    {
-       echo "<div>";
-       $CPF = $_POST["CPF"];
-       echo "</div>";
-    }
-?>
+
 <form method="post" action="">
   Digite o CPF: 
   <input type="number" name="CPF">
@@ -83,6 +76,13 @@
 </form>
 
 <?php 
+            
+  if(isset($_REQUEST['submit_btn']))
+    {
+       echo "<div>";
+       $CPF = $_POST["CPF"];
+       echo "</div>";
+    }
 
 
 $d1=  (int)substr($CPF, 0,1);
