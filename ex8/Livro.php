@@ -8,7 +8,7 @@ class Livro implements Publicacao
     private $totPaginas;
     private $pagAtual=0;
     private $aberto=0;
-    private $leitor=0;
+    private $leitor;
 
     public function __construct($titulo,Pessoa $autor,$totPaginas)
     {
@@ -34,6 +34,11 @@ class Livro implements Publicacao
     }
     public function getLeitor(){
         return $this->leitor;
+    }
+    
+    public function setLeitor(Pessoa $leitor)
+    {
+        $this->leitor=$leitor;    
     }
     
     public function setFechado(){
